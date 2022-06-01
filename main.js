@@ -9,6 +9,7 @@ const startButton = document.querySelector('.start');
 const pauseButton = document.querySelector('.pause');
 const stopButton = document.querySelector('.stop');
 const newButton = document.querySelector('.new');
+const clearButton = document.querySelector('.clear');
 
 //Listeners
 startButton.addEventListener('click', ()=> {
@@ -37,6 +38,14 @@ newButton.addEventListener('click', () => {
   clearFields();
   clearInterval(interval);
   interval = setInterval(startTimer, 10);
+})
+
+clearButton.addEventListener('click', () => {
+  const results = document.querySelectorAll('.results__info');
+  if (results.length) {
+    results.forEach(el => el.remove());
+  }
+  counter = 0;
 })
 
 //Variables

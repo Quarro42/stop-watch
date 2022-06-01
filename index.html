@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stop Watch</title>
-  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" href="assets/clock.png">
 </head>
@@ -42,8 +42,11 @@
   </div>
 
   <div class="results__block">
-    <div class="results__title">Results</div>
-    <div class="results"></div>
+    <div class="wrapper">
+      <div class="results__title">Results:</div>
+      <button class="clear"><img src="assets/cancel.png" alt="cancel-button" width="15px" height="15px"></button>
+    </div>
+    <div class="results" id="res"></div>
   </div>
   <script src="./main.js"></script>
 </body>
