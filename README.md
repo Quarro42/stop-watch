@@ -1,2 +1,1 @@
-# stop-watch
-https://quarro42.github.io/stop-watch/
+# [Stop-watch](https://quarro42.github.io/stop-watch/)
